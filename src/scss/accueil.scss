@@ -1,0 +1,274 @@
+/*Définition des polices personnalisées*/
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section h1,
+nav a {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+}
+
+/* Elémens principaux de la page*/
+
+/* Header */
+
+header .logo {
+  margin: 1rem 2rem 1rem 4.5rem;
+}
+
+/*Navigation*/
+
+nav a {
+  display: none;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  border-top-style: groove;
+  background-color: #f2f2f1;
+  border-bottom: 0.1px solid rgba(209, 209, 209, 0.2);
+}
+
+.button1 {
+  background: linear-gradient(172deg, $couleur_2 21%, $couleur_1 79%);
+  box-shadow: 0 0 0.5rem 0.3rem $couleur-de-fond;
+  color: $cd-txt;
+  width: 63%;
+  border: none;
+  text-align: center;
+  border-radius: 10rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.7rem 0.7rem;
+  margin: auto;
+  position: relative;
+  transition-property: backgroung-color;
+  transition-duration: 5s;
+  margin-bottom: 3rem;
+  &:hover {
+    transition-delay: 2s;
+    background: linear-gradient(rgb(204, 81, 183) 50%, rgb(238, 164, 218) 80%);
+    box-shadow: 5px 5px #cc51b7;
+  }
+}
+
+/* Section Fonctionnement */
+
+.fonctionnement {
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: small;
+    padding-left: 1rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+i.fas.fa-map-marker-alt {
+  padding: 1.2rem 1.2rem 1.2rem 0rem;
+}
+
+i.fas:hover {
+  color: $couleur_1;
+}
+
+.fonctionnement p {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+
+  &::before {
+    color: $cd-txt;
+    background-color: $cd-btn;
+    border-radius: 50%;
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1.7rem;
+    margin-right: 1.5rem;
+  }
+
+  &.unrestaurant::before {
+    content: '1';
+  }
+
+  &.composermenu::before {
+    content: '2';
+  }
+
+  &.degusterrestaurant::before {
+    content: '3';
+  }
+}
+.fonctionnement p:hover {
+  background-color: rgba(255, 121, 209, 0.2);
+}
+
+/* Section Restaurant */
+
+section#resrvationmenu {
+  display: flex;
+  flex-direction: column;
+  background-color: $couleur-de-fond;
+}
+
+.fonctionnement {
+  background-color: white !important;
+}
+
+section#resrvationmenu h1 {
+  text-align: center;
+}
+
+section#resrvationmenu h4 {
+  text-align: center;
+  margin: 1rem;
+}
+
+h2.hfonctionnement {
+  font-size: 20px;
+  margin-left: 5.5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement h4 {
+  margin-left: 1rem;
+}
+
+.figurerestaurants {
+  width: 90%;
+  margin: 1rem;
+  background-color: $cd-txt;
+  border-radius: 20px;
+  box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+
+  img {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+
+  .restaurant_nouveau {
+    display: flex;
+  }
+  .restaurant_nouveau:after {
+    content: 'Nouveau';
+    height: fit-content;
+    background-color: #99e2d0;
+    color: #0b5d49;
+    position: relative;
+    left: -5.5rem;
+    top: 1rem;
+    padding: 0.3em;
+    border-radius: 0.2rem;
+  }
+
+  line-height: 1.5rem;
+  margin-bottom: 5px;
+}
+
+section#restaurants h1 {
+  margin-left: 10.5px;
+}
+
+.fa-accueil {
+  margin: 1rem 0 0 8rem;
+}
+
+figcaption.restaurantlapalettedugout {
+  display: flex;
+}
+
+section#restaurants {
+  h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-left: 0.5rem;
+  }
+
+  p {
+    margin-top: 0;
+    padding-left: 0.5rem;
+  }
+}
+
+span.francaise {
+  color: transparent;
+}
+
+section#restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  margin-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+a {
+  padding: 1.5rem 0 0 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  height: auto;
+  background-color: #0c0c0c;
+  padding-bottom: 25px;
+  text-decoration: none;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 2rem;
+  }
+
+  img {
+    padding: 1rem 3rem 1rem 0rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.fa-utensils:before {
+  content: '\f2e7';
+  padding-right: 0.7rem;
+}
+
+.fa-hands-helping:before {
+  content: '\f4c4';
+  padding-right: 0.2rem;
+}
+
+footer h1 {
+  margin-left: 1.5rem;
+}

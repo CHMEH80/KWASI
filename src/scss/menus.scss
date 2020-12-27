@@ -1,0 +1,248 @@
+
+/* Header */
+
+header {
+  display: flex;
+}
+
+header .logo1 {
+  margin: 1rem 2rem 1rem -.5rem;
+}
+
+i.fas.fa-long-arrow-alt-left {
+  margin: 0rem 2.5rem 1.5rem 0.5rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+/* Section menus */
+
+.fa-restaurants {
+  margin: 1rem 0 0 2rem;
+}
+
+.fa-restaurants-3 {
+  margin: 1rem 0 0 4rem;
+}
+
+section#menualafrancaise img {
+  width: 100%;
+  height: 190px;
+  background-color: #e5e5e5;
+  object-fit: cover;
+}
+
+section#menualafrancaise {
+  background-color: #e5e5e5;
+}
+
+aside.photo_menus {
+  display: flex;
+  justify-content: space-around;
+}
+figure.figureremenus {
+  margin: 0;
+}
+
+figure.figureremenus h1 {
+  font-family: 'Shrikhand', cursive;
+  margin-left: 0.4rem;
+}
+
+figcaption.menus_alafrancaise {
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #e5e5e5;
+  position: relative;
+  bottom: 1rem;
+}
+
+/* Section menus à la Française */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+#menualafrancaise_menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+form {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  // width: 93%;
+  padding-bottom: 3rem;
+  margin: 0 1rem 0 1rem;
+}
+
+form input[type='checkbox'] {
+  display: none;
+}
+
+form li label:first-of-type {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  display: flex;
+  // -webkit-box-pack: justify;
+  // -ms-flex-pack: justify;
+  justify-content: space-between;
+  // -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 0.1px;
+  height: 100%;
+  border-radius: 1rem;
+  // -webkit-box-flex: 1;
+  // -ms-flex: 1;
+  flex: 1;
+}
+
+
+form input[type='checkbox']:checked ~ label:last-of-type {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  display: flex;
+}
+
+form li label:last-of-type {
+  display: none;
+  width: 3.8rem;
+  height: 100%;
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+form li label:last-of-type:before {
+  content: '\f00c';
+  margin: auto;
+  color: #99e2d0;
+  background-color: #f5f5f5;
+  border-radius: 100%;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+form .menus_entree {
+  padding-top: 0.4rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+form .suitemenus_entree {
+  font-size: 0.9rem;
+  padding-left: 0.01rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // -webkit-box-flex: 1;
+  // -ms-flex: 1;
+  flex: 1;
+}
+
+
+form .prix {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  -ms-flex-item-align: end;
+}
+
+form legend::before {
+  content: '';
+  position: absolute;
+  width: 2.6rem;
+  height: 100%;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 1.5rem;
+}
+
+form fieldset {
+  border: 0;
+  padding: 0;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+form legend {
+  position: relative;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+  border: none;
+}
+
+form ul {
+  margin: 0 0 2rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+form li {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  height: 3.8rem;
+  max-width: 100%;
+  margin: 0.1rem 0 1rem 0rem;
+  padding-left: 0.6rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  // -webkit-box-shadow: 0 0 0.5rem 0.3rem #e5e5e5;
+  box-shadow: 0 0 0.5rem 0.3rem #e5e5e5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+form .button {
+  -webkit-box-shadow: 0 0 0.5rem 0.3rem #E5E5FE;
+  box-shadow: 0 0 0.5rem 0.3rem #E5E5FE;
+  background: linear-gradient(172deg, #ff79da 21%, #9356dc 79%);
+  color: white;
+  border: none;
+  width: 50%;
+  height: 3rem;
+  border-radius: 5rem 5rem;
+  cursor: pointer;
+  position: relative;
+  transition-property: backgroung-color;
+  transition-duration: 2s;
+  &:hover {
+    transition-delay: 2s;
+    background: linear-gradient(rgb(204, 81, 183) 50%, rgb(238, 164, 218) 80%);
+    box-shadow: 5px 5px #cc51b7;
+  }
+}
+
+
